@@ -1,4 +1,4 @@
-package controller;
+package com.demo.multimodulepro.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +14,7 @@ public class SampleController {
     public ResponseEntity test(){
 
         return new ResponseEntity("{  \n" +
-                "   \"status\":\"success\"\n" +
+                "   \"status\":\"sample success\"\n" +
                 "}", HttpStatus.OK);
     }
 }

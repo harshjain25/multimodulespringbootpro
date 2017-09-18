@@ -1,11 +1,13 @@
+package com.demo.multimodulepro;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SampleModuleApplication {
+public class DemoModuleApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SampleModuleApplication.class, args);
+        SpringApplication.run(DemoModuleApplication.class, args);
     }
 
 }
