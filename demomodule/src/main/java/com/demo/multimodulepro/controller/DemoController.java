@@ -15,7 +15,7 @@ public class DemoController {
     public ResponseEntity test(){
 
         return new ResponseEntity("{  \n" +
-                "   \"status\":\"success\"\n" +
+                "   \"status\":\"demo success\"\n" +
                 "}", HttpStatus.OK);
     }
 }
