@@ -16,7 +16,7 @@
         <!--<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>-->
         <!--<java.version>1.8</java.version>-->
 
-        <spring-test-dbunit.version>1.2.1</spring-test-dbunit.version>
+        <!--<spring-test-dbunit.version>1.2.1</spring-test-dbunit.version>-->
         <unit-tests.skip>false</unit-tests.skip>
         <integration-tests.skip>true</integration-tests.skip>
     </properties>
@@ -47,7 +47,23 @@
     </dependencies>
 
     <build>
+        <finalName>sample-module</finalName>
         <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.demo.multimodulepro.samplemodule.SampleModuleApplication</mainClass>
+                    <addResources>true</addResources>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

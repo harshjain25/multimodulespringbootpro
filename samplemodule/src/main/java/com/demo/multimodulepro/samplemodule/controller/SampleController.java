@@ -1,4 +1,4 @@
-package com.demo.multimodulepro.controller;
+package com.demo.multimodulepro.samplemodule.demo.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
